@@ -6,7 +6,7 @@ import os, requests
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-a', '--artists', type=str, default=None, help='path to txt file with a list of artists name to create dataset file.')
-    parser.add_argument('-d', '--download_previews', type=str, default=None, help='You will need to create first the dataset.csv file by '
+    parser.add_argument('-d', '--download_previews', action='store_true', default= True, help='You will need to create first the dataset.csv file by '
                                                                                   'executing the -a command')
 
     args = parser.parse_args()
@@ -25,7 +25,7 @@ def main():
                 print("directory songs created")
             for index, d in data.iterrows():
                 audio = requests.get(d['previewUrl'])
-                with open('songs/'+d['song_id']+".m4a", 'wb') as f:
+                with open('songs/'+str(d['song_id'])+".m4a", 'wb') as f:
                     f.write(audio.content)
 
         else:
