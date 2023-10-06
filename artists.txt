@@ -1,4 +1,0 @@
-artist
-artist1
-artist2
-artist3

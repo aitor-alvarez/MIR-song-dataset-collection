@@ -67,9 +67,9 @@ class SongCollection:
 				pass
 			sleep(4)
 
-		df = pd.DataFrame({'artist':artists, 'artist_id':artists_id, 'song':songs, 'song_id': song_ids, 'previewUrl':previewUrls, 'primaryGenre':primaryGenre})
+		df = pd.DataFrame({'artist':artists, 'artist_id':artists_id, 'song':songs, 'song_id': song_ids, 'previewUrl':previewUrls,
+		                   'primaryGenre':primaryGenre})
 		df = df.reset_index(drop=True)
-		json_songs = df.to_json(orient="split")
-		return json_songs
+		return df
 
 
