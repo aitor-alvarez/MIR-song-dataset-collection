@@ -52,11 +52,11 @@ class SongCollection:
 						if result['trackId']:
 							song_ids.append(result['trackId'])
 						else:
-							song_ids.append(" None")
+							song_ids.append("None")
 						if result['previewUrl']:
 							previewUrls.append(result['previewUrl'])
 						else:
-							previewUrls.append("None ")
+							previewUrls.append("None")
 						if result['primaryGenreName']:
 							primaryGenre.append(result['primaryGenreName'])
 						else:
