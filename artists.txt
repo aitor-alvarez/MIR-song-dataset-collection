@@ -1,3 +1,4 @@
 artist
-michael jackson
-madonna
+artist1
+artist2
+artist3
