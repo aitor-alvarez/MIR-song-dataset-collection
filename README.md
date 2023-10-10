@@ -6,7 +6,7 @@ The resulting dataset could be used for training Deep Learning models in singer 
 
 ## Instructions
 
-1. Clone the current repository: ''' git clone https://github.com/aitor-alvarez/MIR-song-dataset-collection.git '''
+1. Clone the current repository: ``` git clone https://github.com/aitor-alvarez/MIR-song-dataset-collection.git ```
 2. Create a file with the artists/performers list. The file should be named artists.txt and contain a single column with the first row (as header) named artist. Place all your artists' names below this header.
 3. Execute the following command to parse the list of artists and search iTunes API for their songs: python main.py -a artists.txt This will result in the creation of a file named dataset.csv that will contain all songs from those artists.
 4. Feel free to edit dataset.csv if you want to exclude songs.
