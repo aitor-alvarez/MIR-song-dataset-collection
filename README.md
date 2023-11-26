@@ -1,6 +1,6 @@
 # MIR-song-dataset-collection
 
-The current scripts searches in iTunes API for the artists that you have selected in your list (see step 2 under instructions) and downloads a 30 second preview of each song from those artists.
+The current scripts searches on iTunes API for artists provided in a list (see step 2 under instructions) and downloads a 30 second preview of each song from those artists.
 
 The resulting dataset could be used for training Deep Learning models in singer identification tasks.
 
